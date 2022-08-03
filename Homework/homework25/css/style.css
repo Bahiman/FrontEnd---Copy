@@ -1,0 +1,19 @@
+img{
+    height: 400px;
+    width: 500px;
+}
+
+table{
+    border: 1px green dashed;
+
+}
+
+
+.green{
+    border-color: yellowgreen;
+}
+
+
+body{
+    background: linear-gradient(red, blue, yellow);
+}  

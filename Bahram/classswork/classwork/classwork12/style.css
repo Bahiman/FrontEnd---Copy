@@ -1,0 +1,8 @@
+body{
+    background-color: lightslategray;
+    background-image: url(https://techcrunch.com/wp-content/uploads/2021/02/keyboard.jpg?w=730&crop=1);
+    background-position: 500px 500px;
+    background-repeat:repeat-y;
+    background-attachment: fixed;
+}
+

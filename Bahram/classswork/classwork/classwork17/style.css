@@ -1,0 +1,19 @@
+body {
+    background: url(https://cdn57.androidauthority.net/wp-content/uploads/2015/11/00-best-backgrounds-and-wallpaper-apps-for-android.jpg) fixed;
+    z-index: 1;
+    background-repeat: repeat-x;
+}
+
+div.color {
+    background: red;
+    background-attachment: scroll;
+    /* background-position: center; */
+    height: 200px;
+    width: 400px;
+    z-index: 3;
+    background-repeat: repeat-x;
+}
+
+div.index {
+    z-index: 2;
+}

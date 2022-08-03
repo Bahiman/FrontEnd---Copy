@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    position: relative;
+    background-color: black;
+    background-image: url("img/1_FsGvJY2p3xT8VL3v5Gv-Hg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+nav.menyu {
+    margin-top: 30px;
+}
+
+nav.menyu>p:first-child,
+nav.menyu>p:nth-child(2) {
+    display: inline;
+
+}
+
+nav.menyu>p:first-child {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+
+nav.menyu>p:nth-child(2){
+    word-spacing: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 500px;
+}
+
+
+nav.menyu>p:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 24px;
+    background-color: crimson;
+    margin-top: 48.5px;
+    right: 790px;
+}
+
+.we_are {
+    width: 700px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.we_are>p {
+    font-weight: 1000;
+    font-size: 85px;
+}
+
+.we_are>p::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 90px;
+    background-color: crimson;
+    margin-left: -322px;
+    margin-top: -100px;
+}
+
+button{
+    background-color: black;
+    border: 2px crimson solid;
+    padding: 10px 50px;
+    margin-top: 30px;
+}
+
+    .buttonish{
+    
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+
+.cards{
+    display: flex;
+    margin: 0px 0px auto   auto;
+    justify-content: center;
+}
+
+.cards>div{
+    height: 350px;
+    width: 330px;
+    border: 1px solid white;
+    margin: 30px;
+    margin-top: 50px;
+    background-color: rgb(16,16,16);
+    text-align:  center;
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.cards>div:first-child{
+    background-color: #fe4164;
+
+}
+ 
+
+.super{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.super_one::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 48px;
+    background-color: white;
+    margin-top: 45px;
+    margin-left: -155px;
+}
+
+.super_two::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 48px;
+    background-color: crimson;
+    margin-top: 45px;
+    margin-left: -180px;
+}
+
+
+.super_three::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 48px;
+    background-color: crimson;
+    margin-top: 45px;
+    margin-left: -230px;
+}
+
+
+.super, .regular{
+    margin-top: 40px;
+}
+.emoji{
+    text-align: left;
+    margin-top: 30px;
+    font-size: xx-large;
+}
+
+.emoji .super .regular{
+    position: absolute;
+    margin-right: 30px;
+}
+
+.under{
+    position: absolute;
+    height: 55px;
+    width: 340px;
+    background-color: #fe4164;
+    margin-left: 987px;
+    margin-top: -60px;
+}
+.blue{
+    height: 30px;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+}
+
+.blue::after{
+    content: "";
+    position: absolute;
+    width: 2.5px;
+    height: 30px;
+    left: 50vw;
+    background-color: #fe4164;
+}

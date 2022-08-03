@@ -1,0 +1,51 @@
+
+    div{
+        background-color: greenyellow;
+    }
+
+    body{
+        background-color: cornflowerblue;
+    }
+
+    li:nth-child(3){
+        color: red;
+    }
+    li:first-child{
+        background-color: yellow;
+    }
+
+
+@media screen and (min-width:800px){
+    div{
+        background: linear-gradient(lightgray, darkgray, gray);
+    }
+    body{
+        background-color: #f3ce2a;
+    }
+
+    li:first-child{
+        color: red;
+    }
+
+    li:nth-child(2){
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width:801px){
+    div{
+        background-color: blueviolet;
+    }
+
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+
+    li:nth-child(2){
+        color: red;
+    }
+
+    li:nth-child(3){
+        background-color: yellow;
+    }
+}

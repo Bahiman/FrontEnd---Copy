@@ -1,0 +1,41 @@
+ul{
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+img{
+    float: left;
+    height: 100px;
+    width: 80px;
+    overflow: auto;
+}
+
+table{
+    border-spacing: 20px;
+}
+td{
+    border: 2px solid green;
+    clear: none;
+}
+
+P{
+    background-color: goldenrod;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+div{
+    padding-right: 5px;
+}
+
+
+
+
+
+

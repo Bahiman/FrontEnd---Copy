@@ -1,0 +1,27 @@
+/* <li id="yellow">London</li>
+<li id="green">Paris</li>
+<li id="pink">Rome</li>
+<li id="purple">Lisbon</li>
+<li id="blue">Munich</li> */
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+#pink{
+    background-color: pink;
+}
+
+#purpole{
+    background-color: purple;
+}
+
+#blue{
+    background-color: blue;
+    color: white;
+}
+

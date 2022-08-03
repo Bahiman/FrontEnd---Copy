@@ -1,0 +1,167 @@
+body {
+    background-color: orange;
+}
+
+
+div.yellow>* {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yellow {
+    background-color: rgb(238, 171, 0);
+    border: 3px whitesmoke solid;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign {
+    position: relative;
+    bottom: 50px;
+    background-color: cornflowerblue;
+    border: 3px black solid;
+    height: 30px;
+    text-align: center;
+}
+
+.cap {
+    bottom: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: azure;
+    letter-spacing: 5px;
+}
+
+div.login_ {
+    bottom: 35px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    /* /* height:30px; */
+}
+
+.button {
+    background-color: beige;
+    position: relative;
+    font-size: small;
+    width: 150px;
+    height: min-content;
+}
+
+
+img {
+    height: 320px;
+    width: 260px;
+}
+
+.green {
+    height: 580px;
+    width: 300px;
+    background-color: mediumspringgreen;
+    left: 400px;
+    bottom: 750px;
+    position: relative;
+    display: flex;
+}
+
+
+
+.reg {
+    position: relative;
+    bottom: -20px;
+    background-color: rgb(98, 14, 255);
+    border: 3px black solid;
+    height: 30px;
+    left: 80px;
+    width: 120px;
+}
+
+.regt {
+    /* bottom: 5px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 40px;
+    color: azure;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.mpass{
+    position: relative;
+    border: 2px blue solid;
+    left: 80px;
+    bottom: -90px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    color: azure;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 165px;
+}
+.name{
+    position: relative;
+    border: 2px blue solid;
+    left: 80px;
+    bottom: -130px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    color: azure;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 165px;
+}
+
+
+.mail{
+    position: relative;
+    border: 2px blue solid;
+    left: 80px;
+    bottom: -160px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    color: azure;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 165px;
+}
+
+.surname{
+    position: relative;
+    border: 2px blue solid;
+    left: 80px;
+    bottom: -190px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    color: azure;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 165px;
+}
+
+.next{
+    position: relative;
+    left: 80px;
+    bottom: -225px;
+    /* margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 30px; */
+    color: azure;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 165px;
+}

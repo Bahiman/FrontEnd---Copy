@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #here_will_be{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <label for="pablo"></label>
+    <input type="text" id="pablo">
+    <button onclick="setName(this)">Add Text</button>
+    <button id="clear_this_s"></button>
+    <div id="here_will_be">
+
+    </div>
+    <script>
+    
+    function setName(elem){
+        const pablo = document.getElementById("pablo").value;
+
+        let negro_and_pablo = localStorage.getItem("new_pablos");
+        if(negro_and_pablo ==null){
+            negro_and_pablo = pablo;
+        }else{
+            negro_and_pablo += ","+ pablo;
+        }
+
+        localStorage.setItem("new_pablos", negro_and_pablo);
+
+        document.getElementsByTagName("input")[0].value = "";
+    }
+
+    document.getElementById("clear_this_s").addEventListener("click", function(){
+        
+    })
+    </script>
+
+</body>
+</html>

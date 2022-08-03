@@ -1,0 +1,14 @@
+table{
+    border-collapse: collapse;
+}
+.foo{
+    width: 100px;
+}
+.app{
+    height: 20px;
+}
+form{  
+    border-color: black;  
+    border-width: 1px;  
+    border-style: inset;  
+    }  

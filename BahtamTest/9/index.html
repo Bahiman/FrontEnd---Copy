@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="search" onkeyup="search(this)"> <br />
+    <div id="information"></div>
+    <script>
+        const array = ["Nigga", "Pablo", "Atabey", "Sultan", "Yourmom"];
+        
+        const information = document.getElementById("information");
+
+        for (elem of array) {
+            information.innerHTML += `<p> ${elem} </p>`;
+        }
+
+        function search(elem) {
+            for(e of array ){
+                if(elem.value.toLocaleLowerCase == e){
+                    console.log("true");
+                }
+            }
+        }
+    </script>
+</body>
+</html> 

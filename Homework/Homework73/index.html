@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #color{
+            height: 200px;
+            width: 200px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div id="color">
+
+    </div>
+
+    <input type="text" id="colorme">
+
+    <button onclick="niggaMe()">
+        CLICK ME
+    </button>
+    <script>
+        const colorME = document.getElementById("color");
+
+        const colorMEME = document.getElementById("colorme");
+
+        function niggaMe(){
+         colorME.textContent = colorMEME.value.length;
+         console.log(colorMEME.value.length)
+    }
+    </script>
+</body>
+</html>

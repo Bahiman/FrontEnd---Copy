@@ -1,0 +1,69 @@
+table{
+    border-collapse: collapse;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.one{
+    background-color: rgb(233, 233, 233);
+}
+
+.two{
+    background-color: blue;
+}
+
+.three{
+    background-color: rgb(202, 0, 0);
+}
+.oneone{
+    background-color:black;
+}
+.twotwo{
+    background-color: gray;
+}
+.threethree{
+    background-color: darkgray;
+}
+p:first-letter{
+    color: green;
+}
+p::first-line{
+    color: blueviolet;
+}
+.marvel{
+    color: red;
+    animation-duration: 2s;
+    animation-name: one;
+    animation-iteration-count:infinite;
+}
+
+.dc{
+    color: goldenrod;
+    animation-name: dc;
+    animation-duration: 2.5s;
+    animation-iteration-count:infinite;
+}
+
+    @keyframes  one  {
+    from{color: red;}
+    to{color:lavenderblush;}
+}
+
+
+@keyframes dc{
+    from{color: goldenrod;}
+    to{color: rgb(24, 24, 24);}
+}
+
+
+
+
+
+
+
+
+
+
+

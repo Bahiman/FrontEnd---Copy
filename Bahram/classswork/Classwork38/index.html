@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #info{
+            height: 500px;
+            width: 500px;
+            background-color: purple;
+            color: white    ;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" onkeyup="seek(this)" placeholder="search">
+    <div id="info"></div>
+    <script>
+        const line = ["Griz", "Cere", "Malikos", "Cal", "Trilla", "Datomir", "Kashykk"];
+
+        const inf = document.getElementById("info");
+
+        function infEm() {
+            inf.innerHTML = "";
+
+            for(element of line){
+                inf.innerHTML += `<p> ${element} </p>`;
+            }
+        }
+
+
+        infEm();
+
+        function seek(elem){
+            if (elem.value ==""){
+                infEm();
+            }else{
+                inf.innerHTML = "";
+                for (e of line) {
+                    if (e.toLocaleLowerCase().startsWith(elem.value)){
+                        base.innerHTML += `<p> ${e} </p>`;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

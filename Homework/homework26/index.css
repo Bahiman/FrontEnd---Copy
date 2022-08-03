@@ -1,0 +1,27 @@
+.underline{
+    text-decoration: underline;
+}
+.why_am_I_still_here{
+    text-align: justify;
+}
+
+.the_only_one{
+    text-align: right;
+}
+
+.up{
+    text-transform: uppercase;
+}
+
+.shadow{
+    text-shadow: 2px 2px rebeccapurple;
+}
+
+.flex{
+    font-size: 1vw;
+}
+
+
+
+
+

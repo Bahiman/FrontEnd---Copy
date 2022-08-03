@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav#nav1{ margin-top: 24px; }
+</style>
+<script>
+var bleep = new Audio();
+bleep.src = "BahtamTest\2\Егор Шип - Делаю вдох Так пахнет Dior Tik tok.mp3";
+function loadContent(num){
+    bleep.play(); // Play button sound now
+    var div1 = document.getElementById("div1");
+    div1.innerHTML = "Loaded content for section 
+}
+</script>
+</head>
+<body>
+  <nav id="nav1">
+    <button onclick="loadContent(1)">Section 1</button>
+    <button onclick="loadContent(2)">Section 2</button>
+    <button onclick="loadContent(3)">Section 3</button>
+  </nav>
+  <div id="div1">Default content ...</div>
+</body>

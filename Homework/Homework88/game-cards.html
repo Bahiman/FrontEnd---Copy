@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+</head>
+<body>
+    <div class="row container m-3">
+
+    </div>
+    
+    <div class="text-center">
+        <a href="index.html" class="btn btn-primary">Home</a>
+    </div>
+    <button type="button" class="btn btn-primary position-relative" id="basket" onclick="basketFunction()">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge round-pill bg-danger"
+            id="basket-counter">0</span>
+    </button>
+    
+    <table class="table d-none">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name of the game</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Total price </th>
+            </tr>
+        </thead>
+        <tbody>
+    
+        </tbody>
+        <script>
+            function createCard(game_object) {
+                const main_div = document.createElement("div");
+                main_div.classList.add("card");
+                main_div.classList.add("text-center");
+                main_div.style.width = 12 + "rem";
+    
+                const picture = document.createElement("img");
+                picture.src = game_object.image;
+                picture.alt = "Couldn't load the picture of " + game_object.protagonist;
+    
+                picture.classList.add("card-img-top");
+    
+                const inner_div = document.createElement("div");
+    
+                inner_div.classList.add("card-body");
+    
+                const title = document.createElement("h5");
+                title.classList.add("card-title");
+                title.textContent = game_object.game;
+    
+                const par_1 = document.createElement("p");
+                par_1.classList.add("card-title");
+                par_1.textContent = game_object.protagonist;
+                
+                const par_2 = document.createElement("p");
+                par_2.classList.add("card-text");
+                par_2.textContent = game_object.price;
+    
+                const par_3 = document.createElement("p");
+                par_3.classList.add("card-text");
+                par_3.textContent = game_object.genre;
+    
+                const card_button = document.createElement("a");
+                card_button.classList.add("btn")
+                card_button.classList.add("btn-primary");
+                card_button.textContent = "Buy";
+    
+                card_button.setAttribute("onclick", `buyGame(${game_object.id})`)
+    
+                const container_div  = document.getElementsByClassName("container")[0];
+    
+                container_div.appendChild(main_div);
+    
+                main_div.appendChild(picture);
+                main_div.appendChild(inner_div);
+                inner_div.appendChild(title);
+                inner_div.appendChild(par_1);
+                inner_div.appendChild(par_2);
+                inner_div.append(par_3);
+                inner_div.appendChild(card_button);
+    
+            }
+    
+            function loadDataForCards(){
+                for(let i=1; i<localStorage.getItem("counter"); i++){
+                    const mydata = localStorage.getItem("mydata-" + i);
+                    
+                    if(mydata == "") continue;
+                    
+                    console.log(mydata);
+                    const gaming = {
+                        id: i,
+                        game: mydata.split("---")[0],
+                        genre: mydata.split("---")[1],
+                        protagonist: mydata.split("---")[2],
+                        price: mydata.split("---")[3],
+                        image: mydata.split("---")[4]
+                    }
+                    
+                    createCard(gaming);
+                }
+            }
+    
+            loadDataForCards();
+    
+            let purchased_game_array = [];
+    
+            function buyGame(id){
+                console.log(id);
+                purchased_game_array.push(id)
+                console.log(purchased_game_array);
+    
+                let basket_counter = document.getElementById("basket-counter");
+                basket_counter.textContent = purchased_game_array.length;
+            }
+    
+            function basketFunction(){
+                document.getElementsByClassName('table')[0].classList.toggle('d-none');
+    
+                for (let id of purchased_game_array){
+                    const game_buy = localStorage.getItem(`mydata ${id}`);
+                    const game_buy_object = {
+                        game_name: game_buy.split("---")[0],
+                        game_cost: game_buy.split("---")[4]
+                    }
+    
+                    fillPurchasedTable(game_buy_object);
+                }
+            }
+    
+            function fillPurchasedTable(game_buy_object){
+                const tr = document.createElement("tr");
+    
+                const td_n = document.createElement("td");
+                td_n.textContent = 0;
+    
+                const td_game_name = document.createElement("td");
+                td_game_name.textContent = game_buy_object.game_name;
+    
+                const td_cost = document.createElement("td");
+                td_cost.textContent = game_buy_object.game_cost;
+    
+                const td_amount = document.createElement("td");
+    
+                const input_amount = document.createElement("input");
+                input_amount.type = "number";
+    
+                td_amount.appendChild(input_amount);
+    
+                tr.appendChild(td_n);
+                tr.appendChild(td_game_name);
+                tr.appendChild(td_cost);;
+                tr.appendChild(td_amount);
+    
+                document.getElementsByTagName("tbody")[0].appendChild(tr);
+
+                
+            }
+        </script>
+    </table>
+</body>
+</html>
+

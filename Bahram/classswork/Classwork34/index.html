@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="nigga">Last Name</label>
+    <input type="text" id="nigga">
+
+    <label for="yea">First Name</label>
+    <input type="text" id="yea">
+    <input type="button" value="CLICK ME" onclick="onClick()">
+
+    <div id="data_div">
+
+    </div>
+    
+
+    <script>
+        const first_name = document.getElementById("nigga")
+
+        const last_name  = document.getElementById("yea")
+
+        const div_data = document.getElementById("data_div")
+
+        function onClick(){
+         div_data.textContent = first_name.value + "" +  Math.round(Math.random()*(300 - 100))+ " " + last_name.value;
+         console.log("Hello there")
+        }
+
+        console.log(div_data.cancat())
+    </script>
+</body> 

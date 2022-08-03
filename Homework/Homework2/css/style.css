@@ -1,0 +1,15 @@
+.biography{
+color: darkblue;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: medium;
+}
+.heading{
+font-size: 40px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: aqua;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}

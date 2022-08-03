@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="container bg-dark">
+        <form class="row g-3 needs-validation" onsubmit=" save()" novalidate>
+            <div class="col-md-4">
+                <label for="game-name-field" class="form-label">Name of the game</label>
+                <input type="text" class="form-control" id="game-name-field" placeholder="Jedi Fallen Order" required>
+                <div class="valid-feedback">Correct!</div>
+                <div class="invalid-feedback">You can not leave the field empty</div>
+            </div>
+            <div class="col-md-4">
+                <label for="genre-field" class="form-label">Genre</label>
+                <input type="text" class="form-control" id="genre-field" placeholder="RPG" required>
+                <div class="valid-feedback">Correct!</div>
+                <div class="invalid-feedback">You can not leave the field empty</div>
+            </div>
+            <div class="col-md-4">
+                <label for="protagonist-field" class="form-label">Protagonist</label>
+                <input type="text" class="form-control" id="protagonist-field" placeholder="Cal" required>
+                <div class="valid-feedback">Correct!</div>
+                <div class="invalid-feedback">You can not leave the field empty</div>
+            </div>
+            <div class="col-md-4">
+                <label for="price-field" class="form-label">Price</label>
+                <input type="text" class="form-control" id="price-field" placeholder="29.99" required>
+                <div class="valid-feedback">Correct!</div>
+                <div class="invalid-feedback">You can not leave the field empty</div>
+            </div>
+            <div class="col-md-4">
+                <label for="image-field" class="form-label">Image</label>
+                <input type="text" class="form-control" id="image-field" placeholder="url" required>
+                <div class="valid-feedback">Correct!</div>
+                <div class="invalid-feedback">You can not leave the field empty</div>
+            </div>
+            <div class="col12 text-center">
+                <button class="btn btn-primary" type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <a href="base-table.html" class="btn btn-success">Base</a>
+    <a href="game-cards.html" class="btn btn-danger">Cards</a>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script>
+        function save() {
+            if (localStorage.getItem("counter") == null) {
+                localStorage.setItem("counter", 0);
+            }
+
+            const game_name = document.getElementById("game-name-field").value;
+
+            const genre = document.getElementById("genre-field").value;
+
+            const protagonist = document.getElementById("protagonist-field").value;
+
+            const price = document.getElementById("price-field").value;
+
+            const image_link = document.getElementById("image-field").value;
+
+            if (game_name === "" || genre === "" || protagonist === "" || price === "" || image_link === "") {
+                return false;
+            } else {
+                const data_to_save = game_name + "---" + genre + "---" + protagonist + "---" + price + "---" +
+                    image_link;
+
+                let id = localStorage.getItem("counter");
+
+                localStorage.setItem("mydata-" + id, data_to_save);
+                localStorage.setItem("counter", ++id);
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>     

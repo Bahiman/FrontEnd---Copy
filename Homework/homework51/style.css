@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white:rgb(236, 229, 229);
+    
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    background-image: url("img/Untitled.png");
+    z-index: 1;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.background{
+    height:max-content;
+    width:max-content;
+    background-color: rgb(235, 232, 232) ;
+    clear: left;text-align: center;
+    margin: 3px;
+}
+
+.background, .green{
+    z-index: 0;
+}
+
+p{
+    position: relative;
+    bottom: 1px;
+}

@@ -1,0 +1,94 @@
+#main {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 5%;
+}
+
+.card {
+    height: auto;
+    margin: 5%;
+    padding: 5%;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40%;
+}
+
+img {
+    margin: 5%;
+    width: 60%;
+    border-radius: 50px;
+}
+
+.card .price {
+    color: darkred;
+}
+
+.card .desc {
+    font-size: initial;
+}
+
+.card button {
+    background-color: darkred;
+    border-radius: 30%;
+    color: white;
+    padding: 5px;
+    transition: 400ms all;
+}
+
+.card button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+#add_pizza {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    font-size: xx-large;
+    text-align: center;
+    transition: 400ms all;
+}
+
+#add_pizza:hover {
+    background-color: greenyellow;
+}
+
+#new_pizza_form {
+    position: fixed;
+    background-color: plum;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 250px;
+}
+
+.hide {
+    display: none;
+}
+
+.basket {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.basket span {
+    position: absolute;
+    background-color: greenyellow;
+    border-radius: 50%;
+    font-size: x-large;
+    top: -10px;
+    right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    #main {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

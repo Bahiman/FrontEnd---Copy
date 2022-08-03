@@ -1,0 +1,10 @@
+div{
+    background-color: green;
+    animation-duration: 3s;
+    animation-name: FOLLOWURDESIGN;
+}
+
+@keyframes FOLLOWURDESIGN{
+    from{background-color:green ;}
+    to{background-color: blueviolet;}
+}

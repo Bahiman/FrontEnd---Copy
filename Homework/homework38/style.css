@@ -1,0 +1,161 @@
+body {
+    animation: infinite 16s body;
+    animation-delay: 0.5s;
+    background: #40E0D0;
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    background-size: 400% 400%;
+    background-position: 400%;
+    z-index: 1;
+}
+
+@keyframes body {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+
+.flex_father {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    animation: infinite 5s orange;
+    animation-delay: 0.5s;
+    background: linear-gradient(-45deg, green, rgb(3, 184, 3));
+    top: 40px;
+    left: 1000px;
+    position: absolute;
+    background-size: 400% 400%;
+    background-position: 400%;
+    z-index: 2;
+    align-content: space-between;
+    border: 3px gray solid;
+}
+
+@keyframes orange {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+.flex_father>div {
+    border-radius: 50%;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    /* animation: infinite 4s;
+    animation-delay: 0.5s; */
+    background-color: yellow;
+    border: 3px gray solid;
+    z-index: 3;
+    padding: 15px;
+    margin: 15px;
+}
+
+
+.square{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    animation: infinite 5s gby;
+    animation-delay: 0.5s;
+    background-color: grey;
+    top: 370px;
+    left: 1000px;
+    position: absolute;
+    background-size: 400% 400%;
+    background-position: 400%;
+    z-index: 2;
+    align-content: space-between;
+    border: 3px gray solid;
+    border-spacing: 20px;
+    width: 350px;
+}
+
+@keyframes gby {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+.square>div {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    /* animation-duration: infinte ;
+    animation-delay: 0.5s; */
+    background-color: red;
+    border: 2px blue solid;
+    z-index: 3;
+    /* align-content: space-between; */
+    padding: 15px;
+    margin: 15px;
+}
+
+.big_father{
+    height: 460px;
+    width: 450px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    animation: infinite 5s ornj;
+    animation-delay: 0.5s;
+    background: linear-gradient(-45deg,yellow,  orange, red);
+    top: 40px;
+    left: 60px;
+    position: absolute;
+    background-size: 400% 400%;
+    background-position: 400%;
+    z-index: 2;
+    align-content: space-between;
+    border: rgb(148, 81, 0) 2px solid;
+}
+
+@keyframes ornj{
+    0%{
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 50%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}
+
+
+div.big_father>div{
+    position: relative;
+    height: 75px;
+    width: 110px;
+    background: linear-gradient(-180deg, rgb(13, 163, 113),  lightgreen );
+    z-index: 3;
+    padding: 15px;
+    margin: 15px;
+}

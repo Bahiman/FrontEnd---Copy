@@ -1,0 +1,37 @@
+div.azer {
+    animation: 3s dame infinite;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAgVBMVEUAueQ/nDXtKTn///8Awe4lojXHUzjFX3jwIzLwJDnsACHtJzftIzTtIDL72tztGi72rbDvUFv96+zsABvuOUb84+T4vsHzhoz6zM72o6fwVV/+8fLyfYPuR1LvQU3rAADuMkDxanL1l5z709XxdHvwXmbrAA70jZL3tbn5xcjvCymJlNXkAAABnklEQVRoge2WbZOCIBCAOb0XD1AINK9MJe8q4///wCulqUkvuMmYPuwzfcqBB3ZhWYQAAAAAAAAAAACehFcPoA8PoMgVhmsZpEpvpXYeY0CBGzFLd1+ZKIRIFkvCiOOwHjcJkeU+PJPkMp5cQik304tkzvk8KbIZm1gS08QoViWW+PAr8yyXk0poVXSKYlWfckFYvVvRCSVEin4bpb78m82qo9HpBNgluu0cmbrKQrcRqlwsVkm07vOhxs4TnXE8haTuk94MJmOHBLFGUBJQbdmOTcL6jSSD6xfnO4XZd/ij8YZbgmaTaP7HRkgQirwKwzbdh7aYWSTEXJGRpeLmVAAKcl+4DuvtokWH09BUGMlCj4z8h4RW3TTzQRGheLvOjISr+nbFtEjiZTdNe73WeNNeFMwwy9NblmeQOIZre1e4vCTeyxH2chn9lBUvBfJc6qORj1OV+tOjJR75aPl5fr00Esfu8fEt0WVzVzysufPTpgb3NtyfrlAtsapSJnHkPMaA3j2A3jyAXjwAEpCABCQgAQlIQAISkIAEJA78Aj2HUL6z/BJBAAAAAElFTkSuQmCC);
+}
+
+.turk{
+    animation: 3s tu infinite;
+    background-image: url(data:image/png;base64,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);
+}
+
+div.bos {
+    animation: 3s cosita infinite;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/188px-Flag_of_Bosnia_and_Herzegovina.svg.png);
+}
+
+div.paki {
+    animation: 3s ah infinite;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/188px-Flag_of_Pakistan.svg.png);
+}
+
+div{
+    border: 1px rgb(53, 0, 0) solid;
+    height: 100px;
+    width: 100px;
+    animation-delay: 1s;
+}
+
+@keyframes dame{
+    /* 0%{
+        translate: 70px 0px;
+    }
+    25%{
+        translate: 0px 60px;
+    } */
+
+    
+}

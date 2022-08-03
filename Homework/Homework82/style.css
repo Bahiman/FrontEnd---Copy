@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg,#8fcca2, #439d91, #327b9e   ,#42589b, #542494  );
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#base{
+    position: absolute;
+    height: 547px;
+    width: 435px;
+    background: linear-gradient(50deg, 5%(rgb(180, 180, 180)), 95%(rgb(236, 236, 236)));
+    background-color: whitesmoke;
+    margin-left: 36vw;
+    margin-top: 150px;  
+    z-index: 3;
+    align-items: center;
+    border-radius: 20px;
+    bottom: 7px;
+    text-align: center;
+}
+
+div#time{
+    position: absolute;
+    font-size: x-large;
+    font-family: 'Bebas Neue';
+    font-size: 65px;
+    font-weight: lighter;
+    text-align: center;
+    top: 50px;
+    /* margin-left: -4px; */
+    color: transparent;
+}
+
+#circle{
+    position: relative;
+    z-index: 3;
+    height: 230px;
+    width: 230px;
+    background: whitesmoke;
+    border-radius: 50%;
+    /* border:red 2px solid; */
+    margin-top: 200px;
+    margin-left: 100px;
+    position: relative;
+    font-size: x-large;
+    font-family: 'Bebas Neue';
+    font-size: 52px;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#big-circle{
+    position: relative;
+    z-index: 1;
+    height: 260px;
+    width: 260px;
+    background: rgb(235, 0, 0);
+    border-radius: 50%;
+    /* border:red 2px solid; */
+    margin-top: -245px;
+    margin-left: 85px;
+}
+
+p{
+    position: relative;
+    top: 79px;
+    /* text-align: center; */
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#stop, #start, #pause{
+    position: relative;
+    z-index: 9;
+    background-color: whitesmoke;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 43px;
+    top: 120px;
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+ #minutes{
+    margin-left: 75px;
+}
+
+
+
+ /* --ebb: #e3dcdc;
+--ocean-green: #439d91;
+--gigas: #4a3996;
+--san-marino: ;
+--manatee: #9090a7;
+--de-york: #8fcca2;
+--east-side: #ac9ccc;
+--tundora: #4c4c4c;
+--wistful: #9fa6cd;  */

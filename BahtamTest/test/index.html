@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="text_one" />
+    <input type="text" id="text_two" />
+    <input type="text" id="text_theree" />
+    <input type="text" id="text_four" />
+    <button onclick="StartrFunc()">click me </button>
+
+    <div id="area"></div>
+
+    <script>
+        const text_one = document.getElementById("text_one");
+        const text_two = document.getElementById("text_two");
+        const text_three = document.getElementById("text_theree");
+        const text_four = document.getElementById("text_four");
+        const area = document.getElementById("area");
+
+        function StartrFunc() {
+            area.textContent = text_one.value + " " + text_two.value + " " + text_three.value + " " + text_four.value;
+            console.log(text_one.value)
+            console.log(text_two.value)
+            console.log(text_three.value)
+            console.log(text_four.value)
+            console.log(area.textContent)
+
+        }
+    </script>
+</body>
+
+</html>

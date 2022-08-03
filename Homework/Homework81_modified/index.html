@@ -1,0 +1,30 @@
+z<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="text" placeholder="Country..." id="country">
+    <br>
+    <input type="text" placeholder="Capital city..." id="capital">
+    <br>
+    <input type="text" placeholder="Name of celebrity" id="celebrity">
+    <br>
+    <button id="save">Save</button>
+    <script>
+        document.getElementById("save").addEventListener("click", function(){
+            console.log("123");
+            const country = document.getElementById("country").value;
+            const capital_city = document.getElementById("capital").value;
+            const celebrity  = document.getElementById("celebrity").value;
+            localStorage.setItem("country", country);
+            localStorage.setItem("capital",capital_city);
+            localStorage.setItem("celebrity",celebrity);
+        })
+    </script>
+</body>
+</html>

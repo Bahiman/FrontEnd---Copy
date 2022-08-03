@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #showData{
+            background-color: red;
+            height:  100px;
+            width:  100px ;
+        }
+    </style>
+</head>
+<body>
+    <label for="getData"></label>
+    <input type="text" id="getData">
+
+    <div id="showData">
+        
+    </div>
+
+    <button onclick="newFun()  ">
+        input text
+    </button>
+
+    <button onclick="showFun()">
+        Show text
+    </button>
+
+    <script>
+        const getData = document.getElementById("getData")
+
+        const showData = document.getElementById("showData")
+
+        function newFun(){
+            dataArray.push(getData.value);
+            console.log(dataArray)
+        }
+
+
+        function showFun(){
+            showData.textContent = getData.value;
+        }
+    </script>
+</body>
+</html>

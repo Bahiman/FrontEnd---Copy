@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        .blue{
+            background-color: rgb(10, 218, 218);
+        }
+
+        .yellow{
+            background-color: rgb(243, 198, 0);
+        }
+        
+        .green{
+            background-color: rgb(143, 209, 45);
+        }
+
+        .red{
+            background-color: rgb(219, 35, 35);
+        }
+        
+        td:hover{
+            background: linear-gradient(lightgray,darkgray,gray);
+            animation-name: hello;
+            animation-duration: 1s;
+            animation-iteration-count:infinite;
+        }
+        
+        @keyframes hello{
+            from{background: linear-gradient(lightgray,darkgray,gray);}
+            to{background: linear-gradient(gray,darkgray,lightgray);}
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr class="blue">
+            <th>a1</th>
+            <th>b1</th>
+            <th>c1</th>
+            <th>d1</th>
+            <th>e1</th> 
+            <th>f1</th>
+            <th>h1</th>
+        </tr>
+        <tr>
+            <td rowspan="6" class="green">a2</td>
+            <td class="yellow">b2</td>
+            <td class="yellow">c2</td>
+            <td class="yellow">d2</td>
+            <td class="yellow">e2</td>
+            <td class="yellow">f2</td>
+            <td class="yellow">h2</td>
+        </tr>
+        <tr>
+            <td class="red">b3</td>
+            <td class="green" rowspan="2" colspan="2">c3</td>
+            <td class="red">e3</td>
+            <td class="red">f3</td>
+            <td class="red">h3</td>
+        </tr>
+        <tr>
+            <td class="yellow">b4</td>
+            <td  class="yellow">e4</td>
+            <td  class="yellow">f4</td>
+            <td class="yellow" >h4</td>
+        </tr>
+        <tr>
+            <td class="red">b5</td>
+            <td class="red">c5</td>
+            <td class="red">d5</td>
+            <td class="red">e5</td>
+            <td class="green" rowspan="2">f5</td>
+            <td class="red">h5</td>
+        </tr>
+        <tr>
+            <td class="yellow">b6</td>
+            <td class="yellow">c6</td>
+            <td class="yellow">d6</td>
+            <td class="yellow">e6</td>
+            <td class="yellow">h6</td>
+        </tr>
+        <tr>
+            <td class="red">b7</td>
+            <td class="red">c7</td>
+            <td class="red">d7</td>
+            <td class="red">e7</td>
+            <td class="red">f7</td>
+            <td class="red">h7</td>
+        </tr>
+        <tr>
+            <td class="yellow" colspan="3">a8</td>
+            <td class="yellow">d8</td>
+            <td class="yellow">e8</td>
+            <td class="yellow">f8</td>
+            <td class="yellow">h8</td>
+        </tr>
+        <tr>
+            <td class="red">a9</td>
+            <td  class="red">b9</td>
+            <td  class="red">c9</td>
+            <td class="red">d9</td>
+            <td class="green" colspan="3" rowspan="2">e9</td>
+        </tr>
+        <tr>
+            <td class="green">a10</td>
+            <td class="green">b10</td>
+            <td  class="green">c10</td>
+            <td  class="green">d10</td>
+        </tr>  What does the 
+    </table>
+</body> 
+</html>

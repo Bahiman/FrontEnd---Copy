@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+
+/* [class*=col"] */
+
+div{
+    height: 50px;
+    /* float: left; */
+}
+
+body{
+    background-color: darkorange;
+}
+.cyan{
+    background-color: cyan;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.purple{
+    background-color: purple;
+}
+
+col-1{width: 100%;}
+col-2{width: 50%;}
+col-3{width: 33.3%;}
+col-4{width: 100%;}

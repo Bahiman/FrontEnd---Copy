@@ -1,0 +1,27 @@
+th{
+color: white;
+}
+.pink{
+background-color: pink;
+animation-name: css;
+animation-duration: 3s;
+}
+
+@keyframes css{
+from {background-color: pink;}
+to {background-color: violet;}
+}
+
+#china{
+color: limegreen;
+background-color: brown;
+}
+#number100{
+    color: yellow;
+    background-color: blue;
+    font-size: xx-large;
+}
+#usa{
+color: goldenrod;
+background-color: darkturquoise;
+}

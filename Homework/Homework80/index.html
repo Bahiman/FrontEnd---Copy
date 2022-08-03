@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="card">
+            <img src="56933159.jpg" alt="pizza">
+            <span>
+                <h2>Authentic</h2>
+                <p class="desc">Dough, cheese, tomato</p>
+                <p class="price">$15.00</p>
+                <button onclick="addBasket(this)">
+                    Add to Basket
+                </button>
+                <span class="hide"></span>
+            </span>
+        </div>
+    </div>
+
+
+    <button id="add_pizza">+</button>
+
+    <div id="new_pizza_form" class="container box_one   ">
+        <input type="text" id="pizza_image" placeholder="pizza image url"><br>
+        <input type="text" id="pizza_title" placeholder="Name your pizza"><br>
+        <input type="text" id="pizza_desc" placeholder="pizza description">
+        <br>
+        <input type="text" id="pizza_price" placeholder="pizza price"><br>
+        <input type="button" id="add_pizza_button" value="Add Pizza">
+        <input type="password">
+    </div>
+
+    <div class="basket">
+        <!-- <img src="—Pngtree—shopping supermarket red basket isolated_5692260.png" alt="basket"> -->
+        <span id="number_of_orders">0</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

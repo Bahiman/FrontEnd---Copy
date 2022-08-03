@@ -1,0 +1,108 @@
+.triangle {
+    width: 0;
+    height: 0;
+    border: 150px solid transparent;
+    border-top: 0;
+    border-bottom: 150px solid rgba(33, 192, 68, 0.986);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.base {
+    width: 230px;
+    height: 170px;
+    background-color: darkorange;
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(155, 104, 10);
+    z-index: 1;
+}
+
+.window {
+    margin-top: 12px;
+    margin-left: 15px;
+    top: 65%;
+    left: 64%;
+    /* transform: translate(-50%, -50%); */
+    height: 60px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0.5px solid white;
+    background-color: rgb(30, 48, 80);
+    /* z-index: 2; */
+}
+
+.window:hover {
+    animation: 2s turn;
+}
+
+@keyframes turn {
+    from {
+        background-color: rgb(30, 48, 80);
+    }
+
+    to {
+        background-color: rgb(141, 148, 158);
+    }
+}
+
+
+
+
+
+.group {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(23, 0, 155);
+    position: absolute;
+    left: 150px;
+    bottom: 110px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.group>div {
+    height: 15px;
+    width: 20px;
+    background-color: rgb(30, 48, 80);
+    margin: 2px;
+}
+
+.group>div:hover {
+    animation: 3s tt;
+}
+
+@keyframes tt {
+    from {
+        background-color: rgb(30, 48, 80);
+    }
+
+    to {
+        background-color: rgb(141, 148, 158);
+    }
+}
+
+
+.fto {
+    width: 120px;
+    height: 120px;
+    /* background-image: url(open-close-door-cartoon-colorful-260nw-1302269626.png); */
+    background-image: url("img/close.png");
+    background-size:cover ;
+    z-index: 2;
+}
+
+.fto:hover{
+    /* background-image: none; */
+    background-image: url(img/open.png);
+    z-index: 3;
+}
+
+

@@ -1,0 +1,71 @@
+
+
+
+.base {
+    background-image: url("img/nomo.png");
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+.wind {
+    background-image: url("img/windy.png");
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    z-index: 3;
+    transition: transform 3s ease-in-out;
+    transform: rotateX(0deg);
+    transform: rotateY(0deg);
+    transform: rotateZ(0deg);
+    transform-origin: 50% 42%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.wind:hover {
+    background-image: none;
+    background-image: url("img/windy.png");
+    background-size: cover;
+    transform: rotateX(360deg);
+    transform: rotateY(360deg);
+    transform: rotateZ(360deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+}
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSykGX9lzyW1vAD6uVt1Ca4EfF01R4Y8b3Y_w&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+.sun {
+    justify-self: left;
+    right: 0px;
+    top: 30px;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    margin-right: 500px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(yellow, rgb(243, 135, 12));
+}

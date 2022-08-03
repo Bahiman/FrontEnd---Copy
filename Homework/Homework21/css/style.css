@@ -1,0 +1,21 @@
+@media screen and (max-width:499.99px){
+    body{
+        background-image: url(https://tap.azstatic.com/uploads/medium/2021%2F05%2F21%2F13%2F21%2F36%2F03dbd22d-87e5-411e-8f99-b8363f6f3b77%2F94444_BIY8WXihm8sqMY1HucMd3g.jpg);
+    }
+    p{
+        background-color: brown;
+        font-size: large;
+    }
+}
+
+
+@media screen and (min-width:500px){
+    body{
+        background-image: url(https://tap.azstatic.com/uploads/medium/2021%2F06%2F03%2F00%2F23%2F27%2F46e2f960-e803-4492-a5ce-17a30d2f381b%2F31570_GWf7pKpyoUoqLBtc_l9cxg.jpg);
+    }
+    p{
+        background-color: blueviolet;
+        font-size: x-large;
+    }
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black_male{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            display: inline-block;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" onchange="helloThere(this)" id="nigga">
+    <div id="pablo"></div>
+    <input type="text" id="negro">
+
+
+    <script>
+        const nigga = document.getElementById("nigga")
+
+        const negro = document.getElementById("negro")
+        
+        const  pablo = document.getElementById("pablo")
+
+        console.log(nigga)
+
+        console.log(negro)
+
+         function helloThere(qaqa){
+
+            console.log(qaqa)
+            
+            pablo.innerHTML = "";
+
+            for(let i = 0;  i < qaqa.value; i++){
+                pablo.innerHTML += "<div class='black_male' onclick='likeThat(this)'></div>";
+            }
+        }
+
+        const black_male = document.getElementsByClassName("black_male");
+
+        // for(let i = 0; i<)
+
+        // function likeThat(cool){
+            
+        // }
+    </script>
+</body>
+</html>

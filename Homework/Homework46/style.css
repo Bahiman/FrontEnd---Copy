@@ -1,0 +1,53 @@
+div.y{
+    height: 150px;
+    width: 150px;
+    animation: 3s infinite move;
+    background-color: red;
+    position: absolute;
+}
+
+@keyframes move{
+    0%{
+        background-color: antiquewhite;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+
+    25%{
+        background-color: aqua;
+        left: 250px;
+        transform: rotate(360deg);
+    }
+    
+    50%{
+        background-color: brown;
+        left: 500px;
+        transform: rotate(360deg);
+    }
+
+    75%{
+        background-color: darkgoldenrod;
+        left: 250px;
+        transform: rotate(360deg);
+    }
+
+    100%{
+        background-color: antiquewhite;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+}
+
+
+/* @keyframes move{
+    from{
+        background-color: red;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+    to{
+        background-color: blue;
+        left: 500px;
+        transform: rotate(360deg);
+    }
+} */

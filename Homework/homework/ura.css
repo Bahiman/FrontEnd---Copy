@@ -1,0 +1,11 @@
+table{
+background-color: yellow;
+animation-name: good;
+animation-duration: 3.5s;
+width: 400px;
+height: 100px;
+}
+@keyframes good {
+from {background-color: yellow;}
+to {background-color: blue;}
+}

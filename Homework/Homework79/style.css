@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#textone {
+    color: red;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#texttwo {
+    color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#texting {
+    height: 130px;
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.description {
+    font-family: Georgia, 'Times New Roman', Times, serif, ;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.cardsmain {
+    position: relative;
+    width: 550px;
+    height: 200px;
+    background-color: white;
+    margin-left: 150px;
+    margin-bottom: 25px;
+}
+
+#main {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 160px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.move_me {
+    text-align: left;
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+
+.price {
+    color: red;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.name,
+.description,
+.price {
+    margin-bottom: 13px;
+}
+
+.add_me {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    animation: nigga 3s infinite ease-in-out;
+}
+
+@keyframes nigga {
+    from {
+        color: gray;
+    }
+    to {
+        color: black;
+    }
+}

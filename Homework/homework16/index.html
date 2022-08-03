@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .decor{
+            text-decoration: 1px dotted  darkslateblue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table border="1"> 
+        <tr>
+            <th>Level1</th>
+            <th>Level2</th>
+            <th>Level3</th>
+            <th>Info</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>System</td>
+            <td>
+                <table border="">
+                    <tr>
+                        <td colspan="4">System Apps</td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">System memory</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td id="system1">System ENV</td>
+                    </tr>
+                    <tr>
+                        <td>System ENV2</td>
+                    </tr>
+                    <tr>
+                        <td id="system2" >Memory Test</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td class="app">App Test</td>
+                    </tr>
+                    <tr>
+                        <td>App Memory</td>
+                    </tr>
+                    <tr>
+                        <td>App Test</td>
+                    </tr>
+                    <tr>
+                        <td>App Test</td>
+                    </tr>
+                    <tr>
+                        <td>App Memory</td>
+                    </tr>
+                    <tr>
+                        <td>App Test</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td class="foo">foo</td>
+                    </tr>
+                    <tr>
+                        <td class="foo">foo</td>
+                    </tr>
+                    <tr>
+                        <td class="foo">foo</td>
+                    </tr>
+                    <tr>
+                        <td class="foo">foo</td>
+                    </tr>
+                    <tr>
+                        <td class="foo">foo</td>
+                    </tr>
+                    <tr>
+                        <td class="foo"> foo</td>
+                    </tr>
+                </table>
+            </td>
+            
+        </tr>
+    </table>
+    <ol>
+        <ol type="I">
+            <li>Background skills</li>
+            <ol type="A">
+                <li>Unix commmands</li>
+                <li>Vim text editor</li>
+            </ol>
+        </ol>
+        <ol start="2" type="I">
+            <li>HTML</li>
+            <ol type="A">
+                <li>Minimal Page</li>
+                <li>Headings</li>
+                <li>Tags</li>
+                <li>Lists</li>
+                <ol type="i">
+                    <li>unordered</li>
+                    <li>Orderede</li>
+                    <li>Defenition</li>
+                    <li>Nested</li>
+                </ol>
+                <li>Links</li>
+                <ol type="i">
+                    <li>Absolute</li>
+                    <li>Relative</li>
+                </ol>
+                <li>Images</li>
+            </ol>
+        </ol>
+        <ol start="3" type="I">
+            <li>CSS</li>
+            <ol type="A">
+                <li>Anatomy</li>
+                <li>Basic Slectors</li>
+                <ol type="i">
+                    <li>Element</li>
+                    <li>Class</li>
+                    <li>ID</li>
+                    <li>Group</li>
+                </ol>
+                <li>The DOM</li>
+                <li>Advanced selectors</li>
+                <li>Box Model</li>
+            </ol>
+        </ol>
+        <ol start="4" type="I">
+            <li>Programming</li>
+            <ol type="A">
+                <li>Python</li>
+                <li>Javascript</li>
+            </ol>
+        </ol>
+        <ol start="5" type="I">
+            <li>Database</li>
+            <ol type="A">
+                <li>Fast File</li>
+                <li>Relational</li>
+            </ol>
+        </ol>
+    </ol>
+    <form action="" border="1">
+        <caption>Application Form</caption>
+        <br>
+        <br>
+        <label for="name">Full Name</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="text" id="email">
+        <br>
+        <p>Gender:</p>
+        <label for="gener">Man</label>
+        <input type="radio" name="pol" id="gener">
+        <label for="gender">Woman</label>
+        <input type="radio" name="pol" id="gender">
+        <br>
+        <br>
+        <select name="" id="">
+            <option value="">Indian</option>
+            <option value="">Azeri</option>
+            <option value="">American</option>
+        </select>
+        <br>
+        <br>
+        <p>Post applying for:</p>
+        <label for="Trainee">Trainee</label>
+        <input type="radio" name="pol" id="trainee">
+        <label for="eng">Software engineer</label>
+        <input type="radio" name="pol" id="eng">
+        <br>
+        <br>
+        <label for="leader">Team Leader</label>
+        <input type="radio" name="pol" id="leader">
+        <label for="manager">Project Manager</label>
+        <input type="radio" name="pol" id="manager">
+        <br>
+        <br>
+        <p>Upload resume:</p>
+        <button>Choose File</button>
+        <br>
+        <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Sample resume text..."></textarea>
+        <br>
+        <br>
+        <input type="checkbox" id="notify">
+        <label for="notify">Notify me the status via Email</label>
+        <br>
+        <br>
+        <input type="radio" id="i">
+        <label for="i">I agree to term & conditions</label>
+        <br>
+        <br>
+        <input type="reset" value="reset">
+        <input type="submit">
+    </form>
+
+    <p class="decor">Hello How are uyo</p>
+    </body>
+
+
+        

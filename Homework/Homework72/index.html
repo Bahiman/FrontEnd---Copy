@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #beauty{
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-color: lightpink;
+            color: white;
+            border: 1px palevioletred solid;
+            font-size: 25vh;
+            text-align: center;
+        }
+
+        #show{
+            /* color: white;
+            font-size: 25vh; */
+            margin-top: 45vh;
+        }
+
+        .move{
+            margin-left: 35vw;
+        }
+    </style>
+</head>
+<body>
+    <label for="nami" class="move">WRITE YOUR NAME HERE</label>
+
+    <input type="text" id="nami">
+    
+    <button onclick="random()">
+        CLICK ME
+    </button>
+
+    <div id="beauty">
+        <div id="show"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

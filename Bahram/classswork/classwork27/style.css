@@ -1,0 +1,30 @@
+:root{
+    --redone: #0074da;
+    --blueone:#800000 ;
+    --greeone:#00FF00;
+}
+
+
+div{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    position: relative;
+}
+
+.blue{
+    background-color: var(--redone);
+}
+
+.red{
+    background-color: var(--blueone);
+}
+
+.green{
+    background-color: var(--greeone);
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}

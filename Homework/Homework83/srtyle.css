@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+#menu{
+    display: inline-flex;
+    transform: translate(0, -50%);
+    margin-left: 25%;
+    margin-top: 2.5%;
+}
+
+#menu > *{
+    margin-right: 10px;
+}
+
+#name-{
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    font-weight: 1000;
+}
+
+/* body{
+    /* background-color: rgb(2, 2, 12); */
+
+label{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+.hide{
+    display: none;
+}
+
+/* x */
+
+/* div{
+    /* color: white; */
+
+.image-{
+    height: 25px;
+    width: 25px;
+    margin-left: 2.5px;
+    margin-top: 2px;
+}
+
+
+.nigera{
+    height: 130px;
+    width: 220px;
+    border-radius: 15px;
+}
+
+
+
+.favourite{
+    height: 30px ;
+    width: 30px;
+    background-color: aquamarine;
+    margin-left: 180px;
+    margin-bottom: 15px;
+}
+
+
+.card{
+    border: 3px solid red;
+    height: 23%;
+    width: 15%;
+    background-color: whitesmoke ;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 50px;
+    
+}
+
+
+body{
+    background-color: darkgray;
+}
+
+.name{
+    position: relative;
+    top: 28px;
+    font-size: x-large;
+    margin-left: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: salmon; 
+}
+
+
+#main-card{
+    display: flex;
+    margin-top: 100px;
+}
+
+#basket-{
+    height: 50px;
+    width: 50px;
+}
+
+#basket{
+    margin-top: 50px;
+    margin-right: 50px;
+}

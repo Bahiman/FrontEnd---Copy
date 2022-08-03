@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: olive;
+            margin-right: 10px;
+            text-align: center;
+            font-size: xx-large;
+            color: white;
+            font-weight: bolder;
+        }
+
+        #flexb {
+            display: flex;
+            flex-direction: row;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+
+        #nigga {
+            margin-left: 650px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="nigga">
+    <div id="flexb">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        // let x = Number("9");
+        // let z = Number("8");
+
+        // console.log(`${x}+${z}=${x+z}`);
+
+        // let city = "Frankfurt";
+
+        // let country = "Germany";
+
+        // console.log(country + " " + city + " " + Math.round(Math.floor(Math.random() * 10)));
+
+        // let niger = [Number(43), Number(12), Number(33)];
+
+        // console.log((niger[0] +niger[1]+niger[2])/niger.length);
+
+        // console.log();  
+
+        let boxa = document.getElementsByClassName("box");
+
+        let nigera = "Nigers";
+
+        boxa[0].textContent = nigera;
+
+        let para = document.createElement("p");
+
+        para.textContent = "Niger";
+
+        boxa[2].appendChild(para);
+
+        let parac = document.createElement("p")
+
+        parac.textContent = "Niamey";
+
+        // parac.setAttribute("id", "another_one")
+
+        boxa[2].appendChild(parac);
+
+         document.getElementsByClassName("box")[2].children[1].style.color = "yellow";
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: max-content;
+            width: 200px;
+            background-color: green;
+            text-align: center;
+            border-radius: 15%;
+        }
+        img{
+            height: 100px;
+            width: 150px;
+            border-radius: 15%;
+            margin-top: 40px;
+        }
+
+        .redbull{
+            position: relative;
+            top: 10px;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ocean">
+            <div id="negr">
+        <h2>Niger</h2>
+        <hr>
+        <p>Field one</p>
+        <p>Field two</p>
+        <button onclick="newPic()">Info</button>
+        <button onclick="changeCa(this)"> Change color</button>
+        <hr>
+        <img src="https://tap.azstatic.com/uploads/medium/2021%2F12%2F31%2F09%2F03%2F09%2Fe58b84d3-6ad3-4429-bc03-ef513ec28956%2F8442_GEZ20Tyh0lE38jW9KHd51A.jpg" alt="" id="niger">
+    </div>
+    </div>
+
+    <script>
+        const niger = document.getElementById("niger");
+
+        const negr  = document.getElementById("negr");
+
+        function newPic(){
+            if(niger.style.display == "inline"){
+                niger.style.display = "none";
+            }else{
+                niger.style.display = "inline";
+            }
+        }
+
+        function changeCa(elem){
+            negr.style.backgroundColor = "red";
+        }
+        
+        function newCard(elem){
+            let negrosa = document.createElement("div");
+
+            negrosa.setAttribute("class", "redbull");
+
+            let title  = document.createElement("h2");
+
+            title.textContent = elem;
+
+            negrosa.appendChild(title);
+
+            const massive  = document.getElementById("ocean");
+
+            massive.appendChild(negrosa);
+        }   
+
+        newCard("Basa");
+        newCard("Sussy Baka");
+        newCard("Lil Nas X");
+
+    </script>
+</body>
+</html>

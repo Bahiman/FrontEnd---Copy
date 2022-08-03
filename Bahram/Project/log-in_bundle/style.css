@@ -1,0 +1,22 @@
+body{
+    background-image: url(in); 
+    background-size:cover;
+}
+
+form{
+    position: relative;
+    height: auto;
+    width: 20%;
+    left: 40%;
+    top: 80px;
+}
+
+.btn-warning{
+    position: relative;
+    left: 140px;
+    top: 360px;
+    padding-right:20px ;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

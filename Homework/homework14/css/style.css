@@ -1,0 +1,29 @@
+.flag{
+    width: 30px;;
+    height: 25px;
+}
+
+.align{
+    text-align: center;
+}
+#register{
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+
+form{
+    background-color: firebrick;
+    animation-duration: 4.3s;
+    animation-name: bahram;
+}
+
+@keyframes bahram{
+    from{background-color: firebrick;}
+    to{background-color: blueviolet;}
+}
+
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
